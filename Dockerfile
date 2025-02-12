@@ -6,7 +6,7 @@ WORKDIR /app
 COPY pom.xml .
 RUN mvn dependency:go-offline
 
-# Copia o código-fonte e compila o projeto
+# Copia o codigo-fonte e compila o projeto
 COPY src ./src
 RUN mvn clean package -DskipTests
 
@@ -20,5 +20,8 @@ COPY --from=builder /app/target/*.jar app.jar
 # Expõe a porta
 EXPOSE 9001
 
-# Executa a aplicação
+ENV LANG C.UTF-8
+ENV LC_ALL C.UTF-8
+
+# Executa a aplicacao
 ENTRYPOINT ["java", "-jar", "app.jar"]

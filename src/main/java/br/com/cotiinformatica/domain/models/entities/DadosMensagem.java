@@ -5,11 +5,11 @@ import java.util.UUID;
 import lombok.Data;
 
 @Data
-public class Email {
-
+public class DadosMensagem {
+	
 	private UUID id;
+	private String email;
+	private String nome;
 	private String assunto;
 	private String mensagem;
-
-
 }
