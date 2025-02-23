@@ -26,8 +26,6 @@ public class MessageConsumer {
 			var filaMensageria = objectMapper.readValue(payload, DadosMensagem.class);
 
 			// Enviar email para o cliente
-
-			// Enviar email para o cliente
 			emailService.enviarEmail(filaMensageria.getEmail(), filaMensageria.getNome(), filaMensageria.getAssunto(),
 					filaMensageria.getMensagem());
 
