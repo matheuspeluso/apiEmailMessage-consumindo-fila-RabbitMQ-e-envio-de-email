@@ -1,6 +1,15 @@
 # API de Envio de Mensagens de Email
 
+<img src="./prints/01.png"> 
+<img src="./prints/02.png"> 
+<img src="./prints/03.png"> 
+<img src="./prints/4.jpg"> 
+<img src="./prints/5.png"> 
+<img src="./prints/6.png"> 
+
+## Descrição Sobre o Projeto
 Esta API consome mensagens de uma fila do RabbitMQ e envia emails conforme as mensagens recebidas. Este projeto trabalha em conjunto com a [Clientes API](https://github.com/matheuspeluso/ClientesApi_CRUD-de-cliente-e-enviando-dados-para-fila-de-rabbitmq).
+
 
 ## Dependencias do projeto
 - Jdk 21
